@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Navbar Styling */
+    body {
+      font-family: 'Lora', serif;
+    }
+
+    .navbar-brand {
+      font-size: 30px;
+      margin-left: 20px;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 16px;
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .navbar-nav .nav-item {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .icon-hover img {
+      transition: all 0.3s ease;
+    }
+
+    .icon-hover img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-hover img {
+      border-radius: 50%;
+    }
+
+    .d-flex.align-items-center {
+      gap: 0px;
+    }
+
+    .navbar-brand.icon-hover img {
+      width: 40px;
+      height: 40px;
+    }
+       /* Footer Styling */
+       .footer {
+           background-color: #222222;
+           color: white;
+           padding: 50px 0;
+           text-align: left;
+       }
+
+       .footer h4 {
+           font-size: 18px;
+           margin-bottom: 15px;
+           color: #00f9ff;
+       }
+
+       .footer p {
+           font-size: 16px;
+           color: #ddd;
+       }
+
+       .footer ul {
+           list-style: none;
+           padding: 0;
+       }
+
+       .footer ul li {
+           margin-bottom: 10px;
+       }
+
+       .footer ul li a {
+           color: #00f9ff;
+           text-decoration: none;
+           font-size: 16px;
+           transition: color 0.3s ease;
+       }
+
+       .footer ul li a:hover {
+           color: #007bff;
+       }
+       /* Social Media Section */
+.social-icons {
+   display: flex;
+   gap: 20px; /* Spacing between icons */
+}
+
+.social-icon {
+   text-decoration: none; /* Remove underline from the link */
+   display: inline-block;
+}
+
+.social-icon i {
+   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition effect for hover */
+}
+
+/* Hover effect on icons */
+.social-icon i:hover {
+   transform: scale(1.1); /* Slightly enlarge the icon */
+   color: #ff4081; /* Change color on hover */
+}
+
+/* Optional: add spacing between the column and the icons */
+.col-md-3 {
+   padding: 20px;
+}
+
+/* Styling for the header */
+h4 {
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+/* social */
+
+       .social-icons {
+           display: flex;
+           gap: 15px;
+       }
+
+       .social-icons .social-icon {
+           transition: transform 0.3s ease;
+       }
+
+       .social-icons .social-icon img {
+           border-radius: 50%;
+           transition: transform 0.3s ease;
+       }
+
+       .social-icons .social-icon:hover img {
+           transform: scale(1.1);
+       }
+
+       /* Newsletter Section Styling */
+       .newsletter-input {
+           width: 70%;
+           padding: 10px;
+           margin-bottom: 15px;
+           border: 2px solid #007bff;
+           border-radius: 5px;
+           color: #555;
+       }
+
+       .subscribe-btn {
+           padding: 10px 20px;
+           background-color: #007bff;
+           color: white;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+       }
+
+       .subscribe-btn:hover {
+           background-color: #0a88d1;
+       }
+
+       /* Footer Bottom */
+       .footer-bottom {
+           text-align: center;
+           margin-top: 30px;
+           font-size: 14px;
+           color: #ddd;
+       }
+
+       .footer-bottom p {
+           margin: 0;
+       }
+
+       /* Responsive Design */
+       @media (max-width: 768px) {
+           .footer .container {
+               text-align: center;
+           }
+
+           .footer .row {
+               flex-direction: column;
+           }
+
+           .footer .col-md-3 {
+               margin-bottom: 30px;
+           }
+       }
+       /* General styling for the contact section */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 50px;
+}
+
+.contact-left {
+  width: 45%;
+  text-align: left;
+}
+
+.contact-left h2 {
+  font-size: 36px;
+  color: black;
+}
+
+.contact-left h2 span {
+  color: #007bff; /* Blue for "Me!" */
+}
+
+.bold-text {
+  font-weight: bold;
+  color: black;
+}
+
+hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 2px solid #ddd;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #007bff;
+}
+
+.social-icons a:hover {
+  color: #0056b3;
+}
+
+/* Right side - Form styling */
+.contact-right {
+  width: 45%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+button {
+  align-self: flex-start;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: 2px solid #007bff;
+  background-color: transparent;
+  color: #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #0056b3;
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #007bff;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Anzila Fatima</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="projects.html">Projects</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand icon-hover" href="https://www.linkedin.com/in/anzila-fatima-218578302/">
+            <img src="images/linkedin.png" alt="LinkedIn" class="me-2">
+          </a>
+          <a class="navbar-brand icon-hover" href="https://github.com/anzilafatima?tab=repositories">
+            <img src="images/download.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- nav end  -->
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="contact-left">
+    <h2>
+      Contact <span>Me!</span>
+    </h2>
+    <p class="bold-text">If You Have Any Project In Your Mind</p>
+    <hr />
+    <p>
+      I'm a website developer and designer - creating bold & brave interface
+      designs for companies all across the world.
+    </p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="bi bi-telephone"></i> +92301345765
+      </div>
+      <div class="contact-item">
+        <i class="bi bi-envelope"></i> anzilafatima25@gmail.com
+      </div>
+    </div>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-right">
+    <form>
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="mobile">Your Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required />
+      </div>
+      <div class="form-group">
+        <label for="message">How can I help you?</label>
+        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-primary btn-lg">Send Me</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <!-- About Section -->
+          <div class="col-md-3">
+              <h4>About Me</h4>
+              <p>
+                  Hi, I'm Anzila Fatima, a passionate software engineer and frontend developer. I specialize in web development and love solving complex problems. Let's connect and create something amazing together!
+              </p>
+          </div>
+          <!-- Quick Links Section -->
+          <div class="col-md-3">
+              <h4>Quick Links</h4>
+              <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <!-- Social Media Section -->
+          <div class="col-md-3">
+              <h4>Connect with Me</h4>
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/anzila-fatima-218578302/" class="social-icon" target="_blank">
+                      <img src="images/linkedin.png" alt="LinkedIn" width="40" height="40">
+                  </a>
+                  <a href="https://github.com/anzilafatima?tab=repositories" class="social-icon" target="_blank">
+                      <img src="images/download.png" alt="GitHub" width="40" height="40">
+                  </a>
+                  <a href="https://www.instagram.com/anzilafatima/" class="social-icon" target="_blank">
+                      <img src="images/instagram (1).png" alt="Instagram" width="40" height="40">
+                      
+                  </a>
+              </div>
+          </div>
+          <!-- Newsletter Section -->
+          <div class="col-md-3">
+              <h4>Newsletter</h4>
+              <p>Subscribe to get the latest updates on my work and web development tips!</p>
+              <form action="submit_newsletter.php" method="POST">
+                  <input type="email" placeholder="Your Email" class="newsletter-input" required>
+                  <button type="submit" class="subscribe-btn">Subscribe</button>
+              </form>
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Anzila Fatima. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

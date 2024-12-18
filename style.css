@@ -1,0 +1,540 @@
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* Navbar Links Hover and Active Effects */
+  .nav-link {
+      transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+      color: #fff;
+      padding: 5px 10px; /* Adds some padding for hover effect */
+      border-radius: 5px; /* Rounded corners */
+      transform: scale(1.1); /* Slight pop effect */
+  }
+  
+  .nav-link:active {
+      background-color: #004080; /* Even darker blue on click */
+      transform: scale(1.2); /* More prominent pop on click */
+  }
+  
+  /* Icons Hover Effect */
+  .icon-hover img {
+      transition: all 0.3s ease;
+  }
+  
+  .icon-hover img:hover {
+      transform: scale(1.2); /* Pop effect for logos */
+      filter: brightness(1.2); /* Brightens the image */
+  }
+  
+  .icon-hover img:active {
+      transform: scale(1.3); /* Slightly larger on click */
+      filter: brightness(1.5); /* Brighter on click */
+  }
+  
+  
+  /* Styling for Hero Section */
+  .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      padding: 0 5%;
+    }
+  
+    .hero-content {
+      max-width: 50%;
+    }
+  
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  
+    .hero-content h2 {
+      color: #007bff; /* Blue Color */
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .hero-content p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+  
+    .hero-content .btn {
+      font-size: 1rem;
+      padding: 15px 30px;
+      margin-right: 15px;
+    }
+  
+    .social-icons {
+      margin-top: 30px; /* Gap between buttons and icons */
+      display: flex;
+      gap: 20px; /* Spacing between icons */
+    }
+  
+    /* Reduced the gap between LinkedIn and GitHub icons */
+    .d-flex.align-items-center {
+      gap: 4px; /* Further reduced the gap between LinkedIn and GitHub icons */
+    }
+  
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #007bff;
+      border-radius: 50%; /* Round shape */
+      color: #007bff;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+    }
+  
+    .social-icons a:hover {
+      background-color: #007bff;
+      color: #fff; /* White color on hover */
+    }
+  
+   
+  .hero-image img {
+  border-radius: 50%; /* For round image */
+  width: 350px; /* Increased width */
+  height: 350px; /* Increased height */
+  object-fit: cover;
+  border: 8px solid transparent; /* Set border to transparent initially */
+  background-image: linear-gradient(45deg, #08acf3, #5d6fbe, #08aaf5); /* Gradient for border */
+  background-clip: border-box; /* Apply gradient to the border */
+  animation: glitter 1.5s linear infinite, float 3s ease-in-out infinite; /* Adding both glitter and floating effects */
+  }
+  
+  @keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  }
+  
+  /* Glitter effect for the border */
+  @keyframes glitter {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+  }
+  
+  .hero-image img {
+  background-size: 400% 400%;
+  }
+  
+  
+  
+    /* Navbar Styling */
+    body {
+      font-family: 'Lora', serif;
+    }
+  
+    .navbar-brand {
+      font-size: 30px;
+      margin-left: 20px;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 16px;
+    }
+  
+    .navbar-nav {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .icon-hover img {
+      transition: all 0.3s ease;
+    }
+  
+    .icon-hover img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .icon-hover img {
+      border-radius: 50%;
+    }
+  
+    .d-flex.align-items-center {
+      gap: 0px;
+    }
+  
+    .navbar-brand.icon-hover img {
+      width: 40px;
+      height: 40px;
+    }
+    /* about section styling updated  */
+  
+  /* about styling */
+  .about-section {
+    background-color: rgb(234, 241, 241);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    text-align: left;
+  }
+  
+  .about-image {
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    position: relative;
+    /* box-shadow: 0 0 10px rgba(0, 123, 255, 0.8), 0 0 20px rgba(0, 123, 255, 0.6);  */
+  }
+  
+  /* Image styling with the same size as the outline */
+  .about-image img {
+    width: 80%;  
+    height: auto;
+    border-radius: 19px;
+    outline: 5px solid #007bff; 
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.7); 
+  }
+  
+  /* Glowing effect for the outline */
+  @keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.8), 0 0 20px rgba(0, 123, 255, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 123, 255, 1), 0 0 50px rgba(0, 123, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.8), 0 0 20px rgba(0, 123, 255, 0.6);
+    }
+  }
+  
+  @keyframes glowingBorder {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+        .about-text {
+            width: 48%;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+  
+        .about-text p {
+            margin-bottom: 20px;
+        }
+  
+        .btn-more-about {
+            padding: 25px 60px;  /* Increased padding to make the button larger */
+            font-size: 26px;     /* Increased font size */
+            color: #fff;
+            background-color: transparent;
+            border: 3px solid #007bff;
+            border-radius: 10px;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+  
+        .btn-more-about:hover {
+            background-color: #007bff;
+        }
+  
+        /* Animation for Image */
+        @keyframes moveUpDown {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .about {
+    color: black;
+    display: inline;  /* Ensure "About" stays inline */
+  }
+  
+  .me {
+    color: rgb(63, 159, 238);
+    font-size: xx-large;
+    font-weight: 600;
+    display: inline;  /* Ensure "me" stays inline */
+  }
+  
+  
+  
+  
+     /* Custom Styles services box */
+     .services h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: black; /* Default for "Services" */
+      font-weight: bold; /* Bold for "My Services" */
+    }
+    .services h2 span {
+      color: #007bff; /* Blue for "My" */
+    }
+    .services .service-box {
+      background-color: rgb(65, 61, 61); /* Black box background */
+      color: white; /* White text */
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Box shadow */
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .services .service-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.8);
+    }
+    .services .service-box h4 {
+      color: white; /* Heading text in white */
+      font-weight: bold; /* Bold font */
+    }
+    .services .btn-primary {
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 20px;
+    }
+    .services .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    /* contact section stylein */
+           /* General styling for the contact section */
+  .contact-section {
+    background-color: rgb(234, 241, 241);
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 50px;
+  }
+  
+  .contact-left {
+    /* background-color: rgb(65, 63, 63); */
+    width: 45%;
+    text-align: left;
+  }
+  
+  .contact-left h2 {
+    font-size: 36px;
+    color: black;
+  }
+  
+  .contact-left h2 span {
+    color: #007bff; /* Blue for "Me!" */
+  }
+  
+  .bold-text {
+    font-weight: bold;
+    color: black;
+  }
+  
+  hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 2px solid #ddd;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item i {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .social-icons a:hover {
+    color: #0056b3;
+  }
+  
+  /* Right side - Form styling */
+  .contact-right {
+    width: 45%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  button {
+    align-self: flex-start;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: 2px solid #007bff;
+    background-color: transparent;
+    color: #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #0056b3;
+  }
+  /* project  section styling */
+  /* Default Font Style */
+  body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Latest Projects Section */
+  
+  .latest-projects {
+    background-color: rgb(234, 241, 241);
+    
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .latest-projects h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .latest-projects h2 .latest {
+    color: #007bff; /* Blue for Latest */
+  }
+  
+  .latest-projects h2 .projects {
+    color: black; /* Black for Projects */
+  }
+  
+  /* Card Container */
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between cards */
+    justify-content: center; /* Centers all cards */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Card Box (Square Shape) */
+  .project-card {
+    position: relative;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 400px; /* Square width if you chnage it 500x500 itu ye upper niche aengy*/ 
+    height: 400px; /* Square height */
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fits within square */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Text overlay on hover */
+  .project-card .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .project-card:hover .text-overlay {
+    display: block;
+  }
+  
+  .project-card h3 {
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+  }
+  
+  .project-card p {
+    font-size: 16px;
+    color: white;
+    margin: 10px 0;
+  }
+  
+  .project-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+  }

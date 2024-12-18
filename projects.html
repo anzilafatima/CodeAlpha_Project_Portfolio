@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      
+   
+     /* Footer Styling */
+     .footer {
+            background-color: #222222;
+            color: white;
+            padding: 50px 0;
+            text-align: left;
+        }
+
+        .footer h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #00f9ff;
+        }
+
+        .footer p {
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            color: #00f9ff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer ul li a:hover {
+            color: #007bff;
+        }
+        /* Social Media Section */
+.social-icons {
+    display: flex;
+    gap: 20px; /* Spacing between icons */
+}
+
+.social-icon {
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block;
+}
+
+.social-icon i {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition effect for hover */
+}
+
+/* Hover effect on icons */
+.social-icon i:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon */
+    color: #ff4081; /* Change color on hover */
+}
+
+/* Optional: add spacing between the column and the icons */
+.col-md-3 {
+    padding: 20px;
+}
+
+/* Styling for the header */
+h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* social */
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons .social-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons .social-icon img {
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons .social-icon:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Newsletter Section Styling */
+        .newsletter-input {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            color: #555;
+        }
+
+        .subscribe-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #0a88d1;
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer .container {
+                text-align: center;
+            }
+
+            .footer .row {
+                flex-direction: column;
+            }
+
+            .footer .col-md-3 {
+                margin-bottom: 30px;
+            }
+        }
+           /* Default Font Style */
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* Latest Projects Section */
+    .latest-projects {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .latest-projects h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .latest-projects h2 .latest {
+      color: #007bff; /* Blue for Latest */
+    }
+
+    .latest-projects h2 .projects {
+      color: black; /* Black for Projects */
+    }
+
+    /* Card Container */
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px; /* Space between cards */
+      justify-content: center; /* Centers all cards */
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Card Box (Square Shape) */
+    .project-card {
+      position: relative;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      width: 400px; /* Square width if you chnage it 500x500 itu ye upper niche aengy*/ 
+      height: 400px; /* Square height */
+      overflow: hidden;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures image fits within square */
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Text overlay on hover */
+    .project-card .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .project-card:hover .text-overlay {
+      display: block;
+    }
+
+    .project-card h3 {
+      font-size: 24px;
+      font-weight: normal;
+      color: white;
+    }
+
+    .project-card p {
+      font-size: 16px;
+      color: white;
+      margin: 10px 0;
+    }
+
+    .project-card a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 14px;
+      display: block;
+      margin-top: 10px;
+    }
+</style>
+   
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #007bff;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Anzila Fatima</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="projects.html">Projects</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand icon-hover" href="https://www.linkedin.com/in/anzila-fatima-218578302/">
+            <img src="images/linkedin.png" alt="LinkedIn" class="me-2">
+          </a>
+          <a class="navbar-brand icon-hover" href="https://github.com/anzilafatima?tab=repositories">
+            <img src="images/download.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- nav end  -->
+<!-- project section  -->
+
+<!-- Latest Projects Section -->
+<section class="latest-projects">
+    <h2><span class="latest">Latest</span> <span class="projects">Projects</span></h2>
+
+    <!-- Container for Cards -->
+    <div class="project-container">
+      <!-- First Row -->
+      <div class="project-card">
+        <img src="images/StockCake-Online Shopping Browse_1733177231.jpg" alt="Project Image">
+        <div class="text-overlay">
+          <h3>Blog web</h3>
+          <p>A responsive and visually appealing platform designed for bloggers. This project leverages HTML, CSS, and JavaScript to create an interactive user experience, featuring dynamic post management, comment sections, and customizable layouts.</p>
+          <a href="https://www.linkedin.com" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/todo.jpg" alt="Project Image">
+        <div class="text-overlay">
+          <h3>To-Do-List</h3>
+          <p>A user-friendly task management application that enhances productivity. Built with modern UI/UX principles, this project allows users to add, edit, and delete tasks while maintaining an intuitive interface for seamless usage.</p>
+          <a href="https://www.linkedin.com" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="project-card">
+        <img src="images/weather.jpg" alt="Project Image">
+        <div class="text-overlay">
+          <h3>Weather app</h3>
+          <p>A real-time weather forecasting application developed using modern APIs to fetch and display live weather data. This app supports multiple city searches, offering current conditions and forecasts in an easy-to-navigate interface optimized for mobile and desktop.</p>
+          <a href="https://www.linkedin.com" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/wbi4.jpg" alt="Project Image">
+        <div class="text-overlay">
+          <h3>Edu web</h3>
+          <p>An educational platform designed with a full-stack development approach. This project includes robust backend functionality and a polished frontend, offering resources and features for seamless learning and course management</p>
+          <a href="https://www.linkedin.com" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- Third Row -->
+      <div class="project-card">
+        <img src="images/StockCake-Pizza Feast Time_1723754974.jpg" alt="Project Image">
+        <div class="text-overlay">
+          <h3>Pizza web</h3>
+          <p>An attractive and interactive website designed for a pizza delivery business. This project showcases a sleek user interface, menu browsing, and order placement functionality, delivering an excellent user experience.</p>
+          <a href="https://www.linkedin.com" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/atm-5965153_960_720.jpg" alt="Project Image">
+        <div class="text-overlay">
+          <h3>ATM system</h3>
+          <p>A comprehensive ATM simulation system that demonstrates efficient transaction handling and security features. This project integrates cloud computing solutions to ensure scalability and optimal resource management.</p>
+          <a href="https://www.linkedin.com" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- project section end -->
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <!-- About Section -->
+          <div class="col-md-3">
+              <h4>About Me</h4>
+              <p>
+                  Hi, I'm Anzila Fatima, a passionate software engineer and frontend developer. I specialize in web development and love solving complex problems. Let's connect and create something amazing together!
+              </p>
+          </div>
+          <!-- Quick Links Section -->
+          <div class="col-md-3">
+              <h4>Quick Links</h4>
+              <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <!-- Social Media Section -->
+          <div class="col-md-3">
+              <h4>Connect with Me</h4>
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/anzila-fatima-218578302/" class="social-icon" target="_blank">
+                      <img src="images/linkedin.png" alt="LinkedIn" width="40" height="40">
+                  </a>
+                  <a href="https://github.com/anzilafatima?tab=repositories" class="social-icon" target="_blank">
+                      <img src="images/download.png" alt="GitHub" width="40" height="40">
+                  </a>
+                  <a href="https://www.instagram.com/anzilafatima/" class="social-icon" target="_blank">
+                      <img src="images/instagram (1).png" alt="Instagram" width="40" height="40">
+                      
+                  </a>
+              </div>
+          </div>
+          <!-- Newsletter Section -->
+          <div class="col-md-3">
+              <h4>Newsletter</h4>
+              <p>Subscribe to get the latest updates on my work and web development tips!</p>
+              <form action="submit_newsletter.php" method="POST">
+                  <input type="email" placeholder="Your Email" class="newsletter-input" required>
+                  <button type="submit" class="subscribe-btn">Subscribe</button>
+              </form>
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Anzila Fatima. All Rights Reserved.</p>
+  </div>
+</footer>
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

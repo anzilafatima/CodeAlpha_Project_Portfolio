@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section with Social Icons</title>
+    <!-- Google Font: Lora -->
+    <!-- Add Bootstrap Icons CDN link in the head section -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Footer Styling */
+      .footer {
+        background-color: #222222;
+        color: white;
+        padding: 50px 0;
+        text-align: left;
+      }
+
+      .footer h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #00f9ff;
+      }
+
+      .footer p {
+        font-size: 16px;
+        color: #ddd;
+      }
+
+      .footer ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer ul li a {
+        color: #00f9ff;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+
+      .footer ul li a:hover {
+        color: #007bff;
+      }
+      /* Social Media Section */
+      .social-icons {
+        display: flex;
+        gap: 20px; /* Spacing between icons */
+      }
+
+      .social-icon {
+        text-decoration: none; /* Remove underline from the link */
+        display: inline-block;
+      }
+
+      .social-icon i {
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition effect for hover */
+      }
+
+      /* Hover effect on icons */
+      .social-icon i:hover {
+        transform: scale(1.1); /* Slightly enlarge the icon */
+        color: #ff4081; /* Change color on hover */
+      }
+
+      /* Optional: add spacing between the column and the icons */
+      .col-md-3 {
+        padding: 20px;
+      }
+
+      /* Styling for the header */
+      h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      /* social */
+
+      .social-icons {
+        display: flex;
+        gap: 15px;
+      }
+
+      .social-icons .social-icon {
+        transition: transform 0.3s ease;
+      }
+
+      .social-icons .social-icon img {
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+      }
+
+      .social-icons .social-icon:hover img {
+        transform: scale(1.1);
+      }
+
+      /* Newsletter Section Styling */
+      .newsletter-input {
+        width: 70%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        color: #555;
+      }
+
+      .subscribe-btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .subscribe-btn:hover {
+        background-color: #0a88d1;
+      }
+
+      /* Footer Bottom */
+      .footer-bottom {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #ddd;
+      }
+
+      .footer-bottom p {
+        margin: 0;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .footer .container {
+          text-align: center;
+        }
+
+        .footer .row {
+          flex-direction: column;
+        }
+
+        .footer .col-md-3 {
+          margin-bottom: 30px;
+        }
+      }
+      /* Style the icons of code , pencil , web */
+      .icon {
+        display: inline-block;
+        margin-bottom: 10px; /* Space between the icon and the heading */
+      }
+
+      .service-box h4 {
+        margin-top: 10px; /* Space between the icon and the title */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #007bff">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Anzila Fatima</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="projects.html">Projects</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a
+              class="navbar-brand icon-hover"
+              href="https://www.linkedin.com/in/anzila-fatima-218578302/"
+            >
+              <img src="images/linkedin.png" alt="LinkedIn" class="me-2" />
+            </a>
+            <a
+              class="navbar-brand icon-hover"
+              href="https://github.com/anzilafatima?tab=repositories"
+            >
+              <img src="images/download.png" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <!-- Left Content -->
+      <div class="hero-content">
+        <h1>Hi, I'm Anzila Fatima</h1>
+        <h2>Frontend Developer</h2>
+        <p>
+          I am a dedicated frontend developer with a passion for building
+          responsive and user-friendly websites. Let's work together to bring
+          your ideas to life!
+        </p>
+        <a href="#hire-me" class="btn btn-primary">Hire Me</a>
+        <a href="#contact" class="btn btn-outline-primary">Let's Talk</a>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <!-- Right Image -->
+      <div class="hero-image">
+        <img src="images/pic1.jpg" alt="Anzila Fatima" />
+      </div>
+    </section>
+    <!-- hero section end -->
+    <!-- About Section -->
+    <div class="about-section">
+      <!-- Image Section -->
+      <div class="about-image">
+        <img src="images/pic1.jpg" alt="Anzila Fatima" />
+        <!-- Your image inside the div -->
+      </div>
+
+      <!-- Text Section -->
+      <div class="about-text">
+        <!-- <h2 class="about">About</h2> -->
+        <h2>
+          <span class="about" style="font-weight: 700">About</span
+          ><span class="me"> me</span>
+        </h2>
+
+        <h4
+          style="color: rgb(63, 159, 238); font-weight: 700; font-size: x-large"
+        >
+          Frontend Developer
+        </h4>
+        <p>
+          Hello! My name is Anzila Fatima, and I am a passionate frontend
+          developer. I have a deep interest in web development and have
+          experience working with technologies such as HTML, CSS,
+          JavaScript,TypeScript, Bootstrap, UX/UI and more. I am constantly
+          learning new technologies to enhance my skill set and stay up-to-date
+          with the ever-evolving world of web development Currently, I am
+          pursuing a Computer Science degree and a Higher Diploma in Software
+          Engineering,.
+        </p>
+        <p>
+          I enjoy solving complex problems, building innovative solutions, and
+          creating user-friendly interfaces. My goal is to contribute to
+          impactful projects and collaborate with other like-minded developers
+          to create meaningful digital experiences.
+        </p>
+        <p>
+          In addition to my technical skills, I am also dedicated to teaching
+          and sharing knowledge. I am working on creating educational content to
+          help others learn web development and technology.
+        </p>
+        <!-- Button to Hire Me -->
+        <a href="#hire-me" class="btn btn-outline-primary btn-lg"
+          >More about
+        </a>
+      </div>
+    </div>
+    <!-- about section end -->
+    <!-- My Services Section -->
+    <section class="services py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2><span>My</span> Services</h2>
+        </div>
+        <div class="row text-center">
+          <!-- Service Box 1 -->
+          <div class="col-md-4">
+            <div class="service-box p-4">
+              <!-- Web Design Icon (Arrow) -->
+              <div class="icon mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect width="16" height="22" x="4" y="1" rx="3" />
+                    <path d="M10 19h4" />
+                  </g>
+                </svg>
+              </div>
+              <h4>Web Design</h4>
+              <p>
+                I create visually appealing and user-friendly website designs
+                tailored to your brand's needs. My designs focus on ensuring a
+                seamless user experience, responsive layouts, and captivating
+                aesthetics that engage visitors effectively.
+              </p>
+              <a href="#hire-me" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+
+          <!-- Service Box 2 -->
+          <div class="col-md-4">
+            <div class="service-box p-4">
+              <!-- Web Development Icon (Arrows) -->
+              <div class="icon mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m7 8l-4 4l4 4m10-8l4 4l-4 4M14 4l-4 16"
+                  />
+                </svg>
+              </div>
+              <h4>Web Development</h4>
+              <p>
+                I specialize in building fast, responsive, and functional
+                websites using modern web development technologies. From simple
+                landing pages to complex web applications, I ensure quality,
+                performance, and scalability.
+              </p>
+              <a href="#hire-me" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+
+          <!-- Service Box 3 -->
+          <div class="col-md-4">
+            <div class="service-box p-4">
+              <!-- Creative Design Icon (Pencil) -->
+              <div class="icon mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-5m-1.414-9.414a2 2 0 1 1 2.828 2.828L11.828 15H9v-2.828z"
+                  />
+                </svg>
+              </div>
+
+              <h4>Creative Designing</h4>
+              <p>
+                I craft unique designs that leave a lasting impression. Whether
+                it's graphic design, UI/UX design, or branding, I strive to
+                deliver creative solutions that resonate with your audience and
+                elevate your brand's image.
+              </p>
+              <a href="#hire-me" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- my services section end  -->
+
+    <!-- project section -->
+    <!-- Latest Projects Section -->
+    <section class="latest-projects">
+      <h2>
+        <span class="latest">Latest</span>
+        <span class="projects">Projects</span>
+      </h2>
+
+      <!-- Container for Cards -->
+      <div class="project-container">
+        <!-- First Row -->
+        <div class="project-card">
+          <img
+            src="images/StockCake-Online Shopping Browse_1733177231.jpg"
+            alt="Project Image"
+          />
+          <div class="text-overlay">
+            <h3>Blog web</h3>
+            <p>
+              This project is about web development using modern technologies
+              like HTML, CSS, and JavaScript.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/todo.jpg" alt="Project Image" />
+          <div class="text-overlay">
+            <h3>To-Do-List</h3>
+            <p>
+              This is a creative design project aimed at improving user
+              experiences through UI/UX design.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="project-card">
+          <img src="images/weather.jpg" alt="Project Image" />
+          <div class="text-overlay">
+            <h3>weather app</h3>
+            <p>
+              This project focuses on mobile application development and its
+              deployment to app stores.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="images/StockCake-Pizza Feast Time_1723754974.jpg"
+            alt="Project Image"
+          />
+          <div class="text-overlay">
+            <h3>Edu web</h3>
+            <p>
+              Here we showcase a full-stack development project where we build
+              the backend and frontend.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <!-- Third Row -->
+        <div class="project-card">
+          <img src="images/atm-5965153_960_720.jpg" alt="Project Image" />
+          <div class="text-overlay">
+            <h3>Pizza web</h3>
+            <p>
+              This project demonstrates advanced data analysis using Python and
+              data visualization tools.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/wbi4.jpg" alt="Project Image" />
+          <div class="text-overlay">
+            <h3>ATM System</h3>
+            <p>
+              Here is a cloud computing project focusing on scalable solutions
+              and efficient resource management.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project section end  -->
+    <!-- contact section -->
+    <section class="contact-section">
+      <div class="contact-left">
+        <h2>Contact <span>Me!</span></h2>
+        <p class="bold-text">If You Have Any Project In Your Mind</p>
+        <hr />
+        <p>
+          I'm a website developer and designer - creating bold & brave interface
+          designs for companies all across the world.
+        </p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="bi bi-telephone"></i> +92301345765
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-envelope"></i> anzilafatima25@gmail.com
+          </div>
+        </div>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="mobile">Your Mobile Number</label>
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              placeholder="Enter your mobile number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">How can I help you?</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-primary btn-lg">
+            Send Me
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- contact section end -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-md-3">
+            <h4>About Me</h4>
+            <p>
+              Hi, I'm Anzila Fatima, a passionate software engineer and frontend
+              developer. I specialize in web development and love solving
+              complex problems. Let's connect and create something amazing
+              together!
+            </p>
+          </div>
+          <!-- Quick Links Section -->
+          <div class="col-md-3">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Social Media Section -->
+          <div class="col-md-3">
+            <h4>Connect with Me</h4>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/anzila-fatima-218578302/"
+                class="social-icon"
+                target="_blank"
+              >
+                <img
+                  src="images/linkedin.png"
+                  alt="LinkedIn"
+                  width="40"
+                  height="40"
+                />
+              </a>
+              <a
+                href="https://github.com/anzilafatima?tab=repositories"
+                class="social-icon"
+                target="_blank"
+              >
+                <img
+                  src="images/download.png"
+                  alt="GitHub"
+                  width="40"
+                  height="40"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/anzilafatima/"
+                class="social-icon"
+                target="_blank"
+              >
+                <img
+                  src="images/instagram (1).png"
+                  alt="Instagram"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- Newsletter Section -->
+          <div class="col-md-3">
+            <h4>Newsletter</h4>
+            <p>
+              Subscribe to get the latest updates on my work and web development
+              tips!
+            </p>
+            <form action="submit_newsletter.php" method="POST">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="newsletter-input"
+                required
+              />
+              <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="footer-bottom">
+        <p>&copy; 2024 Anzila Fatima. All Rights Reserved.</p>
+      </div> -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Anzila Fatima. All rights reserved.</p>
+      </div>
+      <script>
+        document.getElementById("year").innerText = new Date().getFullYear();
+      </script>
+      
+    </footer>
+
+    <!-- Bootstrap Icons CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
